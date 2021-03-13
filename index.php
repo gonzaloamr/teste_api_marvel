@@ -1,1 +1,1 @@
-<?php echo('TESTANDO COMIT COM O PAINEL');
+<?php echo('TESTANDO PULL NO GIT');
