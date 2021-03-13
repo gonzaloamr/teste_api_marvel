@@ -1,1 +1,3 @@
-DirectoryIndex index.php
+RewriteEngine On
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^(.*)$ https://gonzalorodriguez.tech/$1 [R,L]
