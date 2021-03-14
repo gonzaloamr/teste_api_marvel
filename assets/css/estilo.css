@@ -110,13 +110,8 @@ body {
     background-color: #EEE;
 }
 
-
-.modulo.verde-escuro { border: 2px solid #1B5E20; }
-.modulo.verde-escuro > h3 { background-color: #1B5E20; }
-
 .modulo.vermelho-escuro { border: 2px solid rgb(237,29,36); }
 .modulo.vermelho-escuro > h3 { background-color: rgb(237,29,36); }
 
-.modulo.azul-escuro { border: 2px solid #0D47A1; }
-.modulo.azul-escuro > h3 { background-color: #0D47A1; }
+
 
