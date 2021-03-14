@@ -23,36 +23,32 @@ foreach ($adamwarlock->data->results as $characteradam){
     <link rel="stylesheet" href="assets/css/estilo.css">
     <title>Marvel API</title>
 </head>
-<body>
+    <body>
     <header class="cabecalho">
         <h1>
         <a href="https://gonzalorodriguez.tech"><img src="images/logo-marvel-II.png" alt="some text" width=260 height=80> </a>
-        </h1>
-                
+        </h1>                
     </header>
-
-    <main class="principal">
-        <div class="conteudo">
-            <nav class="modulos">
-
-                <div class="modulo vermelho-escuro">
-                    <h3><? echo $characteradam->name ; ?></h3>
-                    <ul>
-                    <a href="https://gonzalorodriguez.tech/adam-warlock.php"><img src="http://i.annihil.us/u/prod/marvel/i/mg/a/f0/5202887448860/portrait_uncanny.jpg"> </a>
-                    </ul>
-                </div>
-
-                <div class="modulo vermelho-escuro">
-                    <h3><? echo $characterzero->name ; ?></h3>
-                    <ul>
-                    <a href="http://www.gonzalorodriguez.tech/agent-zero.php"><img src="http://i.annihil.us/u/prod/marvel/i/mg/f/60/4c0042121d790/portrait_uncanny.jpg"> </a>
-                    </ul>
-                </div>    
-            </nav>
-        </div>
-    </main> 
+        <main class="principal">
+            <div class="conteudo">
+                <nav class="modulos">
+                    <div class="modulo vermelho-escuro">
+                        <h3><? echo $characteradam->name ; ?></h3>
+                            <ul>
+                                <a href="https://gonzalorodriguez.tech/adam-warlock.php"><img src="https://i.annihil.us/u/prod/marvel/i/mg/a/f0/5202887448860/portrait_uncanny.jpg"> </a>
+                            </ul>
+                    </div>
+                    <div class="modulo vermelho-escuro">
+                        <h3><? echo $characterzero->name ; ?></h3>
+                            <ul>
+                                <a href="https://www.gonzalorodriguez.tech/agent-zero.php"><img src="https://i.annihil.us/u/prod/marvel/i/mg/f/60/4c0042121d790/portrait_uncanny.jpg"> </a>
+                            </ul>
+                    </div>    
+                </nav>
+            </div>
+        </main> 
     <footer class="rodape">
         Desenvolvido por Gonzalo Muñoz 
     </footer> 
-</body>
+    </body>
 </html>
