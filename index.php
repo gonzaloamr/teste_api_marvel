@@ -1,16 +1,16 @@
 <?php 
 
 $content_json = file_get_contents("https://gateway.marvel.com/v1/public/characters/1010354?ts=1&apikey=6846979f3da11106792b6c223296acb6&hash=9295fd3b10a4c753da3a83fd7a700595");
-$content = json_decode($content_json);
+$adamwarlock = json_decode($content_json);
 
-$content2 = file_get_contents("https://gateway.marvel.com/v1/public/characters/1009150?ts=1&apikey=6846979f3da11106792b6c223296acb6&hash=9295fd3b10a4c753da3a83fd7a700595");
-$agentzero = json_decode($content2);
+$content2_json = file_get_contents("https://gateway.marvel.com/v1/public/characters/1009150?ts=1&apikey=6846979f3da11106792b6c223296acb6&hash=9295fd3b10a4c753da3a83fd7a700595");
+$agentzero = json_decode($content2_json);
 
 foreach ($agentzero->data->results as $characterzero){
     //echo "Personagem: " . $characterzero->name . "<br>";        
 }
 
-foreach ($content->data->results as $character){
+foreach ($adamwarlock->data->results as $characteradam){
         //echo "Personagem: " . $character->name . "<br>";        
     }
     ?>
@@ -36,7 +36,7 @@ foreach ($content->data->results as $character){
             <nav class="modulos">
 
                 <div class="modulo vermelho-escuro">
-                    <h3><? echo $character->name ; ?></h3>
+                    <h3><? echo $characteradam->name ; ?></h3>
                     <ul>
                     <a href="https://gonzalorodriguez.tech/adam-warlock.php"><img src="http://i.annihil.us/u/prod/marvel/i/mg/a/f0/5202887448860/portrait_uncanny.jpg"> </a>
                     </ul>
