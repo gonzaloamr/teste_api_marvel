@@ -15,26 +15,27 @@ $content = json_decode($content_json);
     <link rel="stylesheet" href="assets/css/estilo.css">
     <title>Marvel API</title>
 </head>
-<body>
+    <body>
     <header class="cabecalho">
         <h1>
         <a href="https://gonzalorodriguez.tech"><img src="images/logo-marvel-II.png" alt="some text" width=260 height=80> </a>
         </h1>                
     </header>
-    <div class="conteudo">
-    <nav class="modulos">
-    <div class="modulo vermelho-escuro">
-    <h3>Quadrinhos</h3>
-<?php    
-    foreach ($content->data->results as $character){
-    echo "Quadrinhos: " . $character->title . "<br>";
-    echo "<hr>";  
-    }
-?>
-    </div>
-    </nav>
-    </div>
-
- 
-</body>
+        <div class="conteudo">
+            <nav class="modulos">
+                <div class="modulo vermelho-escuro">
+                    <h3>Stories</h3>
+                    <?php    
+                        foreach ($content->data->results as $character){
+                        echo "Story: " . $character->title . "<br>";
+                        echo "<hr>";  
+                        }
+                    ?>
+                </div>
+            </nav>
+        </div> 
+    </body>
+    <footer class="rodape">
+        Desenvolvido por Gonzalo Muñoz 
+    </footer>
 </html>
