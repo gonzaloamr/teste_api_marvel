@@ -3,8 +3,8 @@
 $content_json = file_get_contents("https://gateway.marvel.com/v1/public/characters/1010354?ts=1&apikey=6846979f3da11106792b6c223296acb6&hash=9295fd3b10a4c753da3a83fd7a700595");
 $content = json_decode($content_json);
 
-$heroium = file_get_contents("https://gateway.marvel.com/v1/public/characters/1009150?ts=1&apikey=6846979f3da11106792b6c223296acb6&hash=9295fd3b10a4c753da3a83fd7a700595");
-$agentzero = json_decode($heroium);
+$content2 = file_get_contents("https://gateway.marvel.com/v1/public/characters/1009150?ts=1&apikey=6846979f3da11106792b6c223296acb6&hash=9295fd3b10a4c753da3a83fd7a700595");
+$agentzero = json_decode($content2);
 
 foreach ($agentzero->data->results as $characterzero){
     //echo "Personagem: " . $characterzero->name . "<br>";        
