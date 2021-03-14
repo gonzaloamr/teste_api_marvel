@@ -1,9 +1,9 @@
 <?php
 
 $content_json = file_get_contents("https://gateway.marvel.com/v1/public/characters/1009150/stories?ts=1&apikey=6846979f3da11106792b6c223296acb6&hash=9295fd3b10a4c753da3a83fd7a700595");
-$content = json_decode($content_json);
+$content = json_decode($content_json); //esse é o decode encarregado de transformar o json em um array no php
 
-//print_r($content);
+//print_r($content); utilizado para depuração
 
 ?>
 
@@ -25,7 +25,7 @@ $content = json_decode($content_json);
             <nav class="modulos">
                 <div class="modulo vermelho-escuro">
                     <h3>Stories</h3>
-                    <?php    
+                    <?php //laço utilizado para buscar as informações no json converdido    
                         foreach ($content->data->results as $character){
                         echo "Story: " . $character->title . "<br>";
                         echo "<hr>";  
