@@ -47,15 +47,7 @@ foreach ($content->data->results as $character){
                     <ul>
                     <a href="http://www.gonzalorodriguez.tech/agent-zero.php"><img src="http://i.annihil.us/u/prod/marvel/i/mg/f/60/4c0042121d790/portrait_uncanny.jpg"> </a>
                     </ul>
-                </div>
-
-                <div class="modulo vermelho-escuro">
-                    <h3>TESTE</h3>
-                    <ul>
-                    <a href="http://www.gonzalorodriguez.tech/api-marvel.php">TESTE PARA A API </a>
-                    </ul>
-                </div>       
-        
+                </div>    
             </nav>
         </div>
     </main> 
